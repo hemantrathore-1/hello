@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int plusfunctionint (int x,int y)
+{
+return x+y;
+}
+double plusfunctiondouble(double x,double y)
+{
+    return x+y;
+}
+int main()
+{
+ int mynum1=plusfunctionint(4,6);
+ double mynum2=plusfunctiondouble(4.3,6.26);
+ cout<<"int:"<<mynum1<<"\n";
+ cout<<"double:"<<mynum2;
+    return 0;
+}

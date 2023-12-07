@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+#box {
+  height: 300px;
+  width: 300px;
+  background-color: aquamarine;
+  /* border-radius: 100%; */
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: inherit;
+  animation-delay: 1s;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
